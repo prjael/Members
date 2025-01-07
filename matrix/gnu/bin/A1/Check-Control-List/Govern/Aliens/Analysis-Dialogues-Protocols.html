@@ -1,0 +1,194 @@
+
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><meta property="og:title" content="Wireshark · Display Filter Reference: Frame"><meta property="og:description" content="Wireshark: The world's most popular network protocol analyzer"><meta property="og:type" content="website"><meta property="og:site_name" content="Wireshark"><meta property="og:url" content="https://www.wireshark.org/templates/dfref-protocol-page.html"><meta property="og:image" content="https://www.wireshark.org/assets/img/wireshark-logo-big.png"><meta name="twitter:image:alt" content="Image for the website for Wireshark, the world's premiere network analyzer"><meta name="twitter:card" content="summary_large_image"><link rel="preload" href="/assets/fonts/Lato-Regular.woff2"><link rel="preload" href="/assets/fonts/Lato-Bold.woff2"><link rel="preload" href="/assets/fonts/Lato-Heavy.woff2"><link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico"><script>
+            const currentTheme = localStorage.getItem("theme");
+            document.documentElement.className = currentTheme;
+        </script><!-- Pretix --><link rel="stylesheet" type="text/css" href="https://ticketing.wireshark.org/sf/APAC-Wireshark-Training/widget/v1.css" crossorigin><script type="text/javascript" src="https://ticketing.wireshark.org/widget/v1.en.js" async crossorigin></script><!-- End Pretix --><title>Wireshark · Display Filter Reference: Frame</title><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-YLHRKD6LH6"></script><script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-YLHRKD6LH6');
+        </script><style>td[data-astro-cid-sn4tgght]:first-child{overflow-wrap:anywhere}
+</style>
+<link rel="stylesheet" href="/_astro/about.RuAyaNjz.css">
+<link rel="stylesheet" href="/_astro/AppWrapper.MoYCN3rN.css"></head> <body> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).only=e;window.dispatchEvent(new Event("astro:only"));})();;(()=>{var A=Object.defineProperty;var g=(i,o,a)=>o in i?A(i,o,{enumerable:!0,configurable:!0,writable:!0,value:a}):i[o]=a;var d=(i,o,a)=>g(i,typeof o!="symbol"?o+"":o,a);{let i={0:t=>m(t),1:t=>a(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(a(t)),5:t=>new Set(a(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>1/0*t},o=t=>{let[l,e]=t;return l in i?i[l](e):void 0},a=t=>t.map(o),m=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([l,e])=>[l,o(e)]));class y extends HTMLElement{constructor(){super(...arguments);d(this,"Component");d(this,"hydrator");d(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let c=this.querySelectorAll("astro-slot"),n={},h=this.querySelectorAll("template[data-astro-template]");for(let r of h){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(let r of c){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("name")||"default"]=r.innerHTML)}let p;try{p=this.hasAttribute("props")?m(JSON.parse(this.getAttribute("props"))):{}}catch(r){let s=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(s+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${s}`,this.getAttribute("props"),r),r}let u;await this.hydrator(this)(this.Component,p,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});d(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),c.disconnect(),this.childrenConnectedCallback()},c=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});c.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}async start(){let e=JSON.parse(this.getAttribute("opts")),c=this.getAttribute("client");if(Astro[c]===void 0){window.addEventListener(`astro:${c}`,()=>this.start(),{once:!0});return}try{await Astro[c](async()=>{let n=this.getAttribute("renderer-url"),[h,{default:p}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),u=this.getAttribute("component-export")||"default";if(!u.includes("."))this.Component=h[u];else{this.Component=h;for(let f of u.split("."))this.Component=this.Component[f]}return this.hydrator=p,this.hydrate},e,this)}catch(n){console.error(`[astro-island] Error hydrating ${this.getAttribute("component-url")}`,n)}}attributeChangedCallback(){this.hydrate()}}d(y,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",y)}})();</script><astro-island uid="ZdxBCQ" component-url="/_astro/AppWrapper.6q1pjiUb.js" component-export="default" renderer-url="/_astro/client.DxA9buPs.js" props="{}" ssr="" client="only" opts="{&quot;name&quot;:&quot;AppWrapper&quot;,&quot;value&quot;:&quot;preact&quot;}" await-children=""><template data-astro-template>  <div class="main-container"> <section class="dfref" data-astro-cid-sn4tgght>
+<section id="display-filter-reference">
+
+<h2>Display Filter Reference: Frame</h2>
+
+<p><strong>Protocol field name:</strong> frame</p>
+
+<p><strong>Versions:</strong> 1.0.0 to 4.4.2</p>
+
+<p><a href="../">Back to Display Filter Reference</a></p>
+
+<p>
+    <table class="display-filter"><tbody>
+    <tr>
+    <th>Field name</th>
+    <th>Description</th>
+    <th>Type</th>
+    <th>Versions</th>
+    </tr>
+
+    <tr id="comment"><td>comment</td><td>Comment</td><td>Character string</td><td>1.8.0 to 1.8.15</td></tr>
+    <tr id="frame.bblog"><td>frame<wbr>.bblog</td><td>Black Box Log</td><td>Character string</td><td>3.6.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.dupacks"><td>frame<wbr>.bblog<wbr>.dupacks</td><td>Duplicate Acknowledgements</td><td>Unsigned integer (32 bits)</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.errno"><td>frame<wbr>.bblog<wbr>.errno</td><td>Error Number</td><td>Signed integer (32 bits)</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.event_flags"><td>frame<wbr>.bblog<wbr>.event<wbr>_flags</td><td>Event Flags</td><td>Unsigned integer (16 bits)</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.event_flags_hdr"><td>frame<wbr>.bblog<wbr>.event<wbr>_flags<wbr>_hdr</td><td>TCP header</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.event_flags_rxbuf"><td>frame<wbr>.bblog<wbr>.event<wbr>_flags<wbr>_rxbuf</td><td>Receive buffer information</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.event_flags_stack"><td>frame<wbr>.bblog<wbr>.event<wbr>_flags<wbr>_stack</td><td>Stack specific information</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.event_flags_txbuf"><td>frame<wbr>.bblog<wbr>.event<wbr>_flags<wbr>_txbuf</td><td>Send buffer information</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.event_flags_verbose"><td>frame<wbr>.bblog<wbr>.event<wbr>_flags<wbr>_verbose</td><td>Additional information</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.event_id"><td>frame<wbr>.bblog<wbr>.event<wbr>_id</td><td>Event Identifier</td><td>Unsigned integer (8 bits)</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.first_byte_in"><td>frame<wbr>.bblog<wbr>.first<wbr>_byte<wbr>_in</td><td>Time of First Byte In</td><td>Unsigned integer (32 bits)</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.first_byte_out"><td>frame<wbr>.bblog<wbr>.first<wbr>_byte<wbr>_out</td><td>Time of First Byte Out</td><td>Unsigned integer (32 bits)</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.flex_1"><td>frame<wbr>.bblog<wbr>.flex<wbr>_1</td><td>Flex 1</td><td>Unsigned integer (32 bits)</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.flex_2"><td>frame<wbr>.bblog<wbr>.flex<wbr>_2</td><td>Flex 2</td><td>Unsigned integer (32 bits)</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.iss"><td>frame<wbr>.bblog<wbr>.iss</td><td>Initial Sending Sequence Number (ISS)</td><td>Unsigned integer (32 bits)</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.pad_1"><td>frame<wbr>.bblog<wbr>.pad<wbr>_1</td><td>Padding</td><td>Unsigned integer (8 bits)</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.pad_2"><td>frame<wbr>.bblog<wbr>.pad<wbr>_2</td><td>Padding</td><td>Unsigned integer (8 bits)</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.pad_3"><td>frame<wbr>.bblog<wbr>.pad<wbr>_3</td><td>Padding</td><td>Unsigned integer (8 bits)</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.payload_length"><td>frame<wbr>.bblog<wbr>.payload<wbr>_length</td><td>TCP Payload Length</td><td>Unsigned integer (32 bits)</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.rcv_adv"><td>frame<wbr>.bblog<wbr>.rcv<wbr>_adv</td><td>Receive Advanced (RCV.ADV)</td><td>Unsigned integer (32 bits)</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.rcv_nxt"><td>frame<wbr>.bblog<wbr>.rcv<wbr>_nxt</td><td>Receive Next (RCV.NXT)</td><td>Unsigned integer (32 bits)</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.rcv_shift"><td>frame<wbr>.bblog<wbr>.rcv<wbr>_shift</td><td>Rcv.Wind.Shift</td><td>Unsigned integer (8 bits)</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.rcv_up"><td>frame<wbr>.bblog<wbr>.rcv<wbr>_up</td><td>Receive Urgent Pointer (RCV.UP)</td><td>Unsigned integer (32 bits)</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.rcv_wnd"><td>frame<wbr>.bblog<wbr>.rcv<wbr>_wnd</td><td>Receive Window (RCV.WND)</td><td>Unsigned integer (32 bits)</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.rttvar"><td>frame<wbr>.bblog<wbr>.rttvar</td><td>Round Trip Timer Variance (RTTVAR)</td><td>Unsigned integer (32 bits)</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.rxb_acc"><td>frame<wbr>.bblog<wbr>.rxb<wbr>_acc</td><td>Receive Buffer ACC</td><td>Unsigned integer (32 bits)</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.rxb_ccc"><td>frame<wbr>.bblog<wbr>.rxb<wbr>_ccc</td><td>Receive Buffer CCC</td><td>Unsigned integer (32 bits)</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.rxb_spare"><td>frame<wbr>.bblog<wbr>.rxb<wbr>_spare</td><td>Receive Buffer Spare</td><td>Unsigned integer (32 bits)</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.seg_qlen"><td>frame<wbr>.bblog<wbr>.seg<wbr>_qlen</td><td>Segment Queue Length</td><td>Unsigned integer (32 bits)</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.serial_nr"><td>frame<wbr>.bblog<wbr>.serial<wbr>_nr</td><td>Serial Number</td><td>Unsigned integer (32 bits)</td><td>3.6.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.snd_cwnd"><td>frame<wbr>.bblog<wbr>.snd<wbr>_cwnd</td><td>Congestion Window</td><td>Unsigned integer (32 bits)</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.snd_max"><td>frame<wbr>.bblog<wbr>.snd<wbr>_max</td><td>Newest Sequence Number Sent (SND.MAX)</td><td>Unsigned integer (32 bits)</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.snd_num_holes"><td>frame<wbr>.bblog<wbr>.snd<wbr>_num<wbr>_holes</td><td>Number of Holes</td><td>Unsigned integer (32 bits)</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.snd_nxt"><td>frame<wbr>.bblog<wbr>.snd<wbr>_nxt</td><td>Next Sequence Number (SND.NXT)</td><td>Unsigned integer (32 bits)</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.snd_recover"><td>frame<wbr>.bblog<wbr>.snd<wbr>_recover</td><td>Recovery Sequence Number (SND.RECOVER)</td><td>Unsigned integer (32 bits)</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.snd_shift"><td>frame<wbr>.bblog<wbr>.snd<wbr>_shift</td><td>Snd.Wind.Shift</td><td>Unsigned integer (8 bits)</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.snd_ssthresh"><td>frame<wbr>.bblog<wbr>.snd<wbr>_ssthresh</td><td>Slowstart Threshold (SSTHREASH)</td><td>Unsigned integer (32 bits)</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.snd_una"><td>frame<wbr>.bblog<wbr>.snd<wbr>_una</td><td>Oldest Unacknowledged Sequence Number (SND.UNA)</td><td>Unsigned integer (32 bits)</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.snd_wnd"><td>frame<wbr>.bblog<wbr>.snd<wbr>_wnd</td><td>Send Window (SND.WND)</td><td>Unsigned integer (32 bits)</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.srtt"><td>frame<wbr>.bblog<wbr>.srtt</td><td>Smoothed Round Trip Time (SRTT)</td><td>Unsigned integer (32 bits)</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.starttime"><td>frame<wbr>.bblog<wbr>.starttime</td><td>Starttime</td><td>Unsigned integer (32 bits)</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.state"><td>frame<wbr>.bblog<wbr>.state</td><td>TCP State</td><td>Unsigned integer (32 bits)</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags</td><td>TCB Flags</td><td>Unsigned integer (32 bits)</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags2"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags2</td><td>TCB Flags2</td><td>Unsigned integer (32 bits)</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags2_ace_permit"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags2<wbr>_ace<wbr>_permit</td><td>Accurate ECN mode</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags2_drop_after_data"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags2<wbr>_drop<wbr>_after<wbr>_data</td><td>Drop connection after all data has been acknowledged</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags2_ecn_permit"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags2<wbr>_ecn<wbr>_permit</td><td>ECN</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags2_ecn_snd_cwr"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags2<wbr>_ecn<wbr>_snd<wbr>_cwr</td><td>ECN CWR queued</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags2_ecn_snd_ece"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags2<wbr>_ecn<wbr>_snd<wbr>_ece</td><td>ECN ECE queued</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags2_first_bytes_complete"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags2<wbr>_first<wbr>_bytes<wbr>_complete</td><td>First bytes in/out</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags2_log_auto"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags2<wbr>_log<wbr>_auto</td><td>Connection auto-logging</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags2_plpmtu_blackhole"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags2<wbr>_plpmtu<wbr>_blackhole</td><td>PMTU blackhole detection</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags2_plpmtu_maxsegsnt"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags2<wbr>_plpmtu<wbr>_maxsegsnt</td><td>Last segment sent was a full segment</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags2_plpmtu_pmtud"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags2<wbr>_plpmtu<wbr>_pmtud</td><td>Path MTU discovery</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags_ack_now"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags<wbr>_ack<wbr>_now</td><td>Ack now</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags_be_in_cong_recovery"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags<wbr>_be<wbr>_in<wbr>_cong<wbr>_recovery</td><td>Currently in congestion avoidance</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags_be_in_fast_recovery"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags<wbr>_be<wbr>_in<wbr>_fast<wbr>_recovery</td><td>Currently in fast recovery</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags_delayed_ack"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags<wbr>_delayed<wbr>_ack</td><td>Delayed ack</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags_force_data"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags<wbr>_force<wbr>_data</td><td>Force data</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags_goodput_in_progress"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags<wbr>_goodput<wbr>_in<wbr>_progress</td><td>Goodput measurement in progress</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags_last_idle"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags<wbr>_last<wbr>_idle</td><td>Connection was previously idle</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags_listen_queue_overflow"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags<wbr>_listen<wbr>_queue<wbr>_overflow</td><td>Listen queue overflow</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags_lost_rtx_detection"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags<wbr>_lost<wbr>_rtx<wbr>_detection</td><td>Lost retransmission detection</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags_more_to_come"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags<wbr>_more<wbr>_to<wbr>_come</td><td>More to come</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags_need_fin"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags<wbr>_need<wbr>_fin</td><td>Need FIN</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags_need_syn"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags<wbr>_need<wbr>_syn</td><td>Need SYN</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags_no_delay"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags<wbr>_no<wbr>_delay</td><td>No delay</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags_no_opt"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags<wbr>_no<wbr>_opt</td><td>No options</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags_no_push"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags<wbr>_no<wbr>_push</td><td>No push</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags_prev_valid"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags<wbr>_prev<wbr>_valid</td><td>Saved values for bad retransmission valid</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags_received_timestamp"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags<wbr>_received<wbr>_timestamp</td><td>Peer has requested Timestamp</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags_received_window_scale"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags<wbr>_received<wbr>_window<wbr>_scale</td><td>Peer has requested Window Scaling</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags_request_timestamp"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags<wbr>_request<wbr>_timestamp</td><td>Have or will request Timestamps</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags_request_window_scale"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags<wbr>_request<wbr>_window<wbr>_scale</td><td>Have or will request Window Scaling</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags_sack_permitted"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags<wbr>_sack<wbr>_permitted</td><td>SACK permitted</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags_sent_fin"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags<wbr>_sent<wbr>_fin</td><td>Sent FIN</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags_signature"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags<wbr>_signature</td><td>MD5 signature required</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags_tfo"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags<wbr>_tfo</td><td>TFO</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags_toe"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags<wbr>_toe</td><td>TOE</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags_tso"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags<wbr>_tso</td><td>TSO</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags_unused_0"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags<wbr>_unused<wbr>_0</td><td>Unused 1</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags_unused_1"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags<wbr>_unused<wbr>_1</td><td>Unused 2</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags_wake_socket_receive"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags<wbr>_wake<wbr>_socket<wbr>_receive</td><td>Wakeup receive socket</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags_was_in_cong_recovery"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags<wbr>_was<wbr>_in<wbr>_cong<wbr>_recovery</td><td>Was in congestion avoidance</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags_was_in_fast_recovery"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags<wbr>_was<wbr>_in<wbr>_fast<wbr>_recovery</td><td>Was in fast recovery</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.t_flags_zero_recv_window_sent"><td>frame<wbr>.bblog<wbr>.t<wbr>_flags<wbr>_zero<wbr>_recv<wbr>_window<wbr>_sent</td><td>Sent a RCV.WND = 0 in response</td><td>Boolean</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.ticks"><td>frame<wbr>.bblog<wbr>.ticks</td><td>Ticks</td><td>Unsigned integer (32 bits)</td><td>3.6.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.txb_acc"><td>frame<wbr>.bblog<wbr>.txb<wbr>_acc</td><td>Send Buffer ACC</td><td>Unsigned integer (32 bits)</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.txb_ccc"><td>frame<wbr>.bblog<wbr>.txb<wbr>_ccc</td><td>Send Buffer CCC</td><td>Unsigned integer (32 bits)</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.bblog.txb_spare"><td>frame<wbr>.bblog<wbr>.txb<wbr>_spare</td><td>Send Buffer Spare</td><td>Unsigned integer (32 bits)</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.cap_len"><td>frame<wbr>.cap<wbr>_len</td><td>Frame length stored into the capture file</td><td>Unsigned integer (32 bits)</td><td>1.0.0 to 4.4.2</td></tr>
+    <tr id="frame.cb_copy"><td>frame<wbr>.cb<wbr>_copy</td><td>Copying</td><td>Boolean</td><td>3.6.0 to 4.4.2</td></tr>
+    <tr id="frame.cb_pen"><td>frame<wbr>.cb<wbr>_pen</td><td>Private Enterprise Number</td><td>Unsigned integer (32 bits)</td><td>3.6.0 to 4.4.2</td></tr>
+    <tr id="frame.coloring_rule.name"><td>frame<wbr>.coloring<wbr>_rule<wbr>.name</td><td>Coloring Rule Name</td><td>Character string</td><td>1.0.0 to 4.4.2</td></tr>
+    <tr id="frame.coloring_rule.string"><td>frame<wbr>.coloring<wbr>_rule<wbr>.string</td><td>Coloring Rule String</td><td>Character string</td><td>1.0.0 to 4.4.2</td></tr>
+    <tr id="frame.comment"><td>frame<wbr>.comment</td><td>Comment</td><td>Character string</td><td>1.10.0 to 4.4.2</td></tr>
+    <tr id="frame.comment.expert"><td>frame<wbr>.comment<wbr>.expert</td><td>Formatted comment</td><td>Label</td><td>1.12.0 to 4.4.2</td></tr>
+    <tr id="frame.dlt"><td>frame<wbr>.dlt</td><td>WTAP_ENCAP</td><td>Signed integer (16 bits)</td><td>1.8.0 to 1.8.15</td></tr>
+    <tr id="frame.drop_count"><td>frame<wbr>.drop<wbr>_count</td><td>Drop Count</td><td>Unsigned integer (64 bits)</td><td>3.6.0 to 4.4.2</td></tr>
+    <tr id="frame.encap_type"><td>frame<wbr>.encap<wbr>_type</td><td>Encapsulation type</td><td>Signed integer (16 bits)</td><td>1.10.0 to 4.4.2</td></tr>
+    <tr id="frame.file_off"><td>frame<wbr>.file<wbr>_off</td><td>File Offset</td><td>Signed integer (64 bits)</td><td>1.0.0 to 4.4.2</td></tr>
+    <tr id="frame.hash"><td>frame<wbr>.hash</td><td>Hash Algorithm</td><td>Character string</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.hash.value"><td>frame<wbr>.hash<wbr>.value</td><td>Hash Value</td><td>Byte sequence</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.ignored"><td>frame<wbr>.ignored</td><td>Frame is ignored</td><td>Boolean</td><td>1.4.0 to 4.4.2</td></tr>
+    <tr id="frame.incomplete"><td>frame<wbr>.incomplete</td><td>Incomplete dissector</td><td>Label</td><td>2.0.0 to 4.4.2</td></tr>
+    <tr id="frame.interface_description"><td>frame<wbr>.interface<wbr>_description</td><td>Interface description</td><td>Character string</td><td>2.4.0 to 4.4.2</td></tr>
+    <tr id="frame.interface_id"><td>frame<wbr>.interface<wbr>_id</td><td>Interface id</td><td>Unsigned integer (32 bits)</td><td>1.8.0 to 4.4.2</td></tr>
+    <tr id="frame.interface_name"><td>frame<wbr>.interface<wbr>_name</td><td>Interface name</td><td>Character string</td><td>2.4.0 to 4.4.2</td></tr>
+    <tr id="frame.interface_queue"><td>frame<wbr>.interface<wbr>_queue</td><td>Interface queue</td><td>Unsigned integer (32 bits)</td><td>3.4.0 to 4.4.2</td></tr>
+    <tr id="frame.len"><td>frame<wbr>.len</td><td>Frame length on the wire</td><td>Unsigned integer (32 bits)</td><td>1.0.0 to 4.4.2</td></tr>
+    <tr id="frame.len_lt_caplen"><td>frame<wbr>.len<wbr>_lt<wbr>_caplen</td><td>Frame length is less than captured length</td><td>Label</td><td>3.4.16, 3.6.8 to 4.4.2</td></tr>
+    <tr id="frame.link_nr"><td>frame<wbr>.link<wbr>_nr</td><td>Link Number</td><td>Unsigned integer (16 bits)</td><td>1.0.0 to 4.4.2</td></tr>
+    <tr id="frame.marked"><td>frame<wbr>.marked</td><td>Frame is marked</td><td>Boolean</td><td>1.0.0 to 4.4.2</td></tr>
+    <tr id="frame.md5_hash"><td>frame<wbr>.md5<wbr>_hash</td><td>Frame MD5 Hash</td><td>Character string</td><td>1.2.0 to 4.4.2</td></tr>
+    <tr id="frame.number"><td>frame<wbr>.number</td><td>Frame Number</td><td>Unsigned integer (32 bits)</td><td>1.0.0 to 4.4.2</td></tr>
+    <tr id="frame.offset_shift"><td>frame<wbr>.offset<wbr>_shift</td><td>Time shift for this packet</td><td>Time offset</td><td>1.8.0 to 4.4.2</td></tr>
+    <tr id="frame.p2p_dir"><td>frame<wbr>.p2p<wbr>_dir</td><td>Point-to-Point Direction</td><td>Signed integer (8 bits)</td><td>1.0.0 to 4.4.2</td></tr>
+    <tr id="frame.p_prot_data"><td>frame<wbr>.p<wbr>_prot<wbr>_data</td><td>Number of per-protocol-data</td><td>Unsigned integer (32 bits)</td><td>1.10.0 to 1.12.13</td></tr>
+    <tr id="frame.packet_flags"><td>frame<wbr>.packet<wbr>_flags</td><td>Packet flags</td><td>Unsigned integer (32 bits)</td><td>1.10.0 to 4.4.2</td></tr>
+    <tr id="frame.packet_flags_crc_error"><td>frame<wbr>.packet<wbr>_flags<wbr>_crc<wbr>_error</td><td>CRC error</td><td>Boolean</td><td>1.10.0 to 4.4.2</td></tr>
+    <tr id="frame.packet_flags_direction"><td>frame<wbr>.packet<wbr>_flags<wbr>_direction</td><td>Direction</td><td>Unsigned integer (32 bits)</td><td>1.10.0 to 4.4.2</td></tr>
+    <tr id="frame.packet_flags_fcs_length"><td>frame<wbr>.packet<wbr>_flags<wbr>_fcs<wbr>_length</td><td>FCS length</td><td>Unsigned integer (32 bits)</td><td>1.10.0 to 4.4.2</td></tr>
+    <tr id="frame.packet_flags_packet_too_error"><td>frame<wbr>.packet<wbr>_flags<wbr>_packet<wbr>_too<wbr>_error</td><td>Packet too long error</td><td>Boolean</td><td>1.10.0 to 4.4.2</td></tr>
+    <tr id="frame.packet_flags_packet_too_short_error"><td>frame<wbr>.packet<wbr>_flags<wbr>_packet<wbr>_too<wbr>_short<wbr>_error</td><td>Packet too short error</td><td>Boolean</td><td>1.10.0 to 4.4.2</td></tr>
+    <tr id="frame.packet_flags_preamble_error"><td>frame<wbr>.packet<wbr>_flags<wbr>_preamble<wbr>_error</td><td>Preamble error</td><td>Boolean</td><td>1.10.0 to 4.4.2</td></tr>
+    <tr id="frame.packet_flags_reception_type"><td>frame<wbr>.packet<wbr>_flags<wbr>_reception<wbr>_type</td><td>Reception type</td><td>Unsigned integer (32 bits)</td><td>1.10.0 to 4.4.2</td></tr>
+    <tr id="frame.packet_flags_reserved"><td>frame<wbr>.packet<wbr>_flags<wbr>_reserved</td><td>Reserved</td><td>Unsigned integer (32 bits)</td><td>1.10.0 to 4.4.2</td></tr>
+    <tr id="frame.packet_flags_start_frame_delimiter_error"><td>frame<wbr>.packet<wbr>_flags<wbr>_start<wbr>_frame<wbr>_delimiter<wbr>_error</td><td>Start frame delimiter error</td><td>Boolean</td><td>1.10.0 to 4.4.2</td></tr>
+    <tr id="frame.packet_flags_symbol_error"><td>frame<wbr>.packet<wbr>_flags<wbr>_symbol<wbr>_error</td><td>Symbol error</td><td>Boolean</td><td>1.10.0 to 4.4.2</td></tr>
+    <tr id="frame.packet_flags_unaligned_frame_error"><td>frame<wbr>.packet<wbr>_flags<wbr>_unaligned<wbr>_frame<wbr>_error</td><td>Unaligned frame error</td><td>Boolean</td><td>1.10.0 to 4.4.2</td></tr>
+    <tr id="frame.packet_flags_wrong_inter_frame_gap_error"><td>frame<wbr>.packet<wbr>_flags<wbr>_wrong<wbr>_inter<wbr>_frame<wbr>_gap<wbr>_error</td><td>Wrong interframe gap error</td><td>Boolean</td><td>1.10.0 to 4.4.2</td></tr>
+    <tr id="frame.packet_id"><td>frame<wbr>.packet<wbr>_id</td><td>Packet id</td><td>Unsigned integer (64 bits)</td><td>3.4.0 to 4.4.2</td></tr>
+    <tr id="frame.pcaplog.data"><td>frame<wbr>.pcaplog<wbr>.data</td><td>Data</td><td>Byte sequence</td><td>4.0.0 to 4.2.9</td></tr>
+    <tr id="frame.pcaplog.data_length"><td>frame<wbr>.pcaplog<wbr>.data<wbr>_length</td><td>Data Length</td><td>Unsigned integer (32 bits)</td><td>4.0.0 to 4.2.9</td></tr>
+    <tr id="frame.pcaplog.data_type"><td>frame<wbr>.pcaplog<wbr>.data<wbr>_type</td><td>Date Type</td><td>Unsigned integer (32 bits)</td><td>4.0.0 to 4.2.9</td></tr>
+    <tr id="frame.pkt_len"><td>frame<wbr>.pkt<wbr>_len</td><td>Frame length on the wire</td><td>Unsigned integer (32 bits)</td><td>1.0.0 to 1.0.16</td></tr>
+    <tr id="frame.protocols"><td>frame<wbr>.protocols</td><td>Protocols in frame</td><td>Character string</td><td>1.0.0 to 4.4.2</td></tr>
+    <tr id="frame.ref_time"><td>frame<wbr>.ref<wbr>_time</td><td>This is a Time Reference frame</td><td>Label</td><td>1.0.0 to 4.4.2</td></tr>
+    <tr id="frame.section_number"><td>frame<wbr>.section<wbr>_number</td><td>Section number</td><td>Unsigned integer (32 bits)</td><td>4.0.0 to 4.4.2</td></tr>
+    <tr id="frame.time"><td>frame<wbr>.time</td><td>Arrival Time</td><td>Date and time</td><td>1.0.0 to 4.4.2</td></tr>
+    <tr id="frame.time_delta"><td>frame<wbr>.time<wbr>_delta</td><td>Time delta from previous captured frame</td><td>Time offset</td><td>1.0.0 to 4.4.2</td></tr>
+    <tr id="frame.time_delta_displayed"><td>frame<wbr>.time<wbr>_delta<wbr>_displayed</td><td>Time delta from previous displayed frame</td><td>Time offset</td><td>1.0.0 to 4.4.2</td></tr>
+    <tr id="frame.time_epoch"><td>frame<wbr>.time<wbr>_epoch</td><td>Epoch Arrival Time</td><td>Date and time</td><td>1.4.0 to 4.4.2</td></tr>
+    <tr id="frame.time_invalid"><td>frame<wbr>.time<wbr>_invalid</td><td>Arrival Time: Fractional second out of range (0-1000000000)</td><td>Label</td><td>1.0.0 to 4.4.2</td></tr>
+    <tr id="frame.time_relative"><td>frame<wbr>.time<wbr>_relative</td><td>Time since reference or first frame</td><td>Time offset</td><td>1.0.0 to 4.4.2</td></tr>
+    <tr id="frame.time_relative_capture_start"><td>frame<wbr>.time<wbr>_relative<wbr>_capture<wbr>_start</td><td>Time since start of capturing</td><td>Time offset</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.time_utc"><td>frame<wbr>.time<wbr>_utc</td><td>UTC Arrival Time</td><td>Date and time</td><td>4.2.0 to 4.4.2</td></tr>
+    <tr id="frame.verdict"><td>frame<wbr>.verdict</td><td>Verdict</td><td>Character string</td><td>3.4.0 to 4.4.2</td></tr>
+    <tr id="frame.verdict.ebpf_tc"><td>frame<wbr>.verdict<wbr>.ebpf<wbr>_tc</td><td>eBPF TC</td><td>Signed integer (64 bits)</td><td>3.4.0 to 4.4.2</td></tr>
+    <tr id="frame.verdict.ebpf_xdp"><td>frame<wbr>.verdict<wbr>.ebpf<wbr>_xdp</td><td>eBPF XDP</td><td>Signed integer (64 bits)</td><td>3.4.0 to 4.4.2</td></tr>
+    <tr id="frame.verdict.hw"><td>frame<wbr>.verdict<wbr>.hw</td><td>Hardware</td><td>Byte sequence</td><td>3.4.0 to 4.4.2</td></tr>
+    <tr id="frame.verdict.unknown"><td>frame<wbr>.verdict<wbr>.unknown</td><td>Unknown</td><td>Byte sequence</td><td>3.4.0 to 4.4.2</td></tr>
+
+
+    </tbody></table>
+</p>
+
+
+</section>
+</section> </div>   </template><!--astro:end--></astro-island> <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;: &quot;e2b217f4cd1643178b66920245ab057f&quot;}"></script> </body> </html>

@@ -1,0 +1,90 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width">
+    <title>Protocols/frame - Wireshark Wiki</title>
+    <link rel="stylesheet" href="https://unpkg.com/simpledotcss@2.2.1/simple.min.css" integrity="sha256-/Utme3wDNP8grTDde+CI/KC1HhcynvqIk4Ql6UtRS6o" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/"><img alt="Wireshark logo" src="https://www.wireshark.org/assets/img/wireshark-logo.png"></a>
+        </div>
+        <h1>Protocols/frame</h1>
+    </header>
+    <main>
+        <h1 dir="auto">
+            <a href="#frame-protocol" aria-hidden="true" class="anchor" id="frame-protocol"></a>frame "protocol"
+        </h1>
+        <p dir="auto">The frame protocol isn't a real protocol itself, but used by Wireshark as a base for all the protocols on top of it. It shows information from capturing, such as the exact time a specific frame was captured. You could think of it as a pseudo dissector.</p>
+        <h2 dir="auto">
+            <a href="#history" aria-hidden="true" class="anchor" id="history"></a>History
+        </h2>
+        <p dir="auto">This feature has existed for a long time in Wireshark.</p>
+        <h2 dir="auto">
+            <a href="#protocol-dependencies" aria-hidden="true" class="anchor" id="protocol-dependencies"></a>Protocol dependencies
+        </h2>
+        <p dir="auto">This pseudo-protocol doesn't run atop other protocols.</p>
+        <h2 dir="auto">
+            <a href="#example-traffic" aria-hidden="true" class="anchor" id="example-traffic"></a>Example traffic
+        </h2>
+        <p dir="auto">All capture files include this pseudo-protocol, so specific examples aren't useful.</p>
+        <h2 dir="auto">
+            <a href="#wireshark" aria-hidden="true" class="anchor" id="wireshark"></a>Wireshark
+        </h2>
+        <p dir="auto">The frame dissector is fully functional.</p>
+        <h2 dir="auto">
+            <a href="#preference-settings" aria-hidden="true" class="anchor" id="preference-settings"></a>Preference Settings
+        </h2>
+        <p dir="auto">Configuration options are under <code>Edit-&gt; Preferences...-&gt; Protocols-&gt; Frame</code>.</p>
+        <p dir="auto">
+            <a class="no-attachment-icon" href="/uploads/8d708c782b23ad2f30718875fb95b72e/201108_frame_preferences.png" target="_blank" rel="noopener noreferrer"><img alt="201108_frame_preferences" decoding="async" class="lazy" src="/uploads/8d708c782b23ad2f30718875fb95b72e/201108_frame_preferences.png"></a><br>
+            "Show File Offset" adds a file offset to the frame tree, and "Treat all frames as DOCSIS frames" forces each frame to be dissected as DOCSIS. See <a href="/CaptureSetup/DOCSIS">CaptureSetup/DOCSIS</a> for more information.
+        </p>
+        <p dir="auto">Preferences are also available by right clicking on a packet:</p>
+        <p dir="auto"><a class="no-attachment-icon" href="/uploads/95ba8b17257d5bd790c93e466e94cfed/201108_frame_preferences_2a.png" target="_blank" rel="noopener noreferrer"><img alt="201108_frame_preferences_2a" decoding="async" class="lazy" src="/uploads/95ba8b17257d5bd790c93e466e94cfed/201108_frame_preferences_2a.png"></a></p>
+        <h2 dir="auto">
+            <a href="#example-capture-file" aria-hidden="true" class="anchor" id="example-capture-file"></a>Example capture file
+        </h2>
+        <p dir="auto">All capture files include this pseudo-protocol, so specific examples aren't useful.</p>
+        <h2 dir="auto">
+            <a href="#display-filter" aria-hidden="true" class="anchor" id="display-filter"></a>Display Filter
+        </h2>
+        <p dir="auto">A complete list of frame display filter fields can be found in the <a href="http://www.wireshark.org/docs/dfref/f/frame.html" rel="nofollow noreferrer noopener" target="_blank">display filter reference</a></p>
+        <p dir="auto">Examples:</p>
+        <p dir="auto">Show only the frames from number 20 to 40:</p>
+        <div class="gl-relative markdown-code-block js-markdown-code">
+<pre class="code highlight js-syntax-highlight language-plaintext" v-pre="true"><code><span id="LC1" class="line" lang="plaintext"> frame.number &gt;= 20 &amp;&amp; frame.number &lt;= 40 </span></code></pre>
+            <copy-code></copy-code><insert-code-snippet></insert-code-snippet>
+        </div>
+        <p dir="auto">Hide all frames:</p>
+        <div class="gl-relative markdown-code-block js-markdown-code">
+<pre class="code highlight js-syntax-highlight language-plaintext" v-pre="true"><code><span id="LC1" class="line" lang="plaintext"> not frame </span></code></pre>
+            <copy-code></copy-code><insert-code-snippet></insert-code-snippet>
+        </div>
+        <h2 dir="auto">
+            <a href="#capture-filter" aria-hidden="true" class="anchor" id="capture-filter"></a>Capture Filter
+        </h2>
+        <p dir="auto">A capture filter for the frame pseudo protocol wouldn't make sense, as it would have to accept all packets and reject no packets.</p>
+        <h2 dir="auto">
+            <a href="#external-links" aria-hidden="true" class="anchor" id="external-links"></a>External links
+        </h2>
+        <ul dir="auto">
+            <li>there are no external links</li>
+        </ul>
+        <h2 dir="auto">
+            <a href="#discussion" aria-hidden="true" class="anchor" id="discussion"></a>Discussion
+        </h2>
+        <hr>
+        <p dir="auto">Imported from <a href="https://wiki.wireshark.org/Protocols/frame" rel="nofollow noreferrer noopener" target="_blank">https://wiki.wireshark.org/Protocols/frame</a> on 2020-08-11 23:19:47 UTC</p>
+    </main>
+    <footer>
+        <a href="/">Wireshark Wiki</a>
+        &bull;
+        <a href="https://gitlab.com/wireshark/wireshark/-/wikis/Protocols%2Fframe/history">Page history</a>
+    </footer>
+</body>
+</html>
